@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <!-- 스마트폰 화면 크기에 딱 맞게 보여주는 필수 코드 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포스터 참고문헌</title>
+    
+    <!-- 세련된 무료 폰트(Pretendard) 불러오기 -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    
+    <style>
+        /* 색상 및 기본 테마 설정 */
+        :root {
+            --primary-color: #003e7a; /* 신뢰감을 주는 깊은 네이비 */
+            --bg-color: #f4f6f9;      /* 눈이 편안한 아주 연한 회색 배경 */
+            --text-color: #2c3e50;    /* 너무 까맣지 않은 고급스러운 진회색 */
+        }
+
+        body {
+            font-family: 'Pretendard', 'Malgun Gothic', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            padding: 40px 20px;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        /* 카드 형태의 컨테이너 (그림자로 입체감 부여) */
+        .references-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* 부드러운 그림자 */
+        }
+
+        /* 메인 제목 스타일 */
+        .references-title {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--primary-color);
+            padding-bottom: 12px;
+            margin-bottom: 30px;
+            letter-spacing: -0.5px;
+        }
+
+        /* 소제목(영문 표기 부분) 스타일 */
+        .section-subtitle {
+            font-size: 19px;
+            font-weight: 700;
+            color: #4a5568;
+            margin-top: 45px;
+            margin-bottom: 20px;
+            padding-left: 14px;
+            border-left: 5px solid #cbd5e1;
+            letter-spacing: -0.3px;
+        }
+
+        .references-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        /* 각 참고문헌 항목 */
+        .references-item {
+            font-size: 15px;
+            margin-bottom: 12px;
+            padding: 8px 12px 8px 35px; /* 터치하기 편하게 여백 추가 */
+            text-indent: -35px;         /* 내어쓰기 적용 */
+            word-break: break-all;
+            color: #334155;
+            border-radius: 8px;
+            transition: background-color 0.2s ease; /* 부드러운 색상 전환 */
+        }
+
+        /* 항목에 마우스를 올리거나 스마트폰으로 터치했을 때 살짝 하이라이트 */
+        .references-item:hover {
+            background-color: #f1f5f9;
+        }
+
+        /* 이탤릭체 강조 (학술지명, 책 제목) */
+        .book-title, .journal-title {
+            font-style: italic;
+            font-weight: 600;
+            color: #0f172a;
+        }
+
+        /* 스마트폰 등 작은 화면(모바일)일 때 여백 자동 조정 */
+        @media (max-width: 600px) {
+            body { padding: 15px 10px; }
+            .references-container { padding: 30px 20px; }
+            .references-title { font-size: 24px; }
+            .references-item { font-size: 14px; padding-left: 30px; text-indent: -30px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="references-container">
+    <div class="references-title">참고문헌 (References)</div>
+    
+    <ul class="references-list">
+        <li class="references-item">
+            Dunn, P. K. (2025). Generative AI may impact students’ marks: A case study from a large first-year statistics course. <span class="journal-title">International Journal of Mathematical Education in Science and Technology</span>. https://doi.org/10.1080/0020739X.2025.2539711
+        </li>
+        <li class="references-item">
+            Fan, Y., Tang, L., Le, H., Shen, K., Tan, S., Zhao, Y., Shen, Y., Li, X., & Gašević, D. (2025). Beware of metacognitive laziness: Effects of generative artificial intelligence on learning motivation, processes, and performance. <span class="journal-title">British Journal of Educational Technology</span>, 56, 489–530. https://doi.org/10.1111/bjet.13544
+        </li>
+        <li class="references-item">
+            Gross, M., & Latham, D. (2012). What's skill got to do with it?: Information literacy skills and self‐views of ability among first‐year college students. <span class="journal-title">Journal of the American Society for Information Science and Technology</span>, 63(3), 574-583. https://doi.org/10.1002/asi.21681
+        </li>
+        <li class="references-item">
+            Jia, W., Pan, L., & Neary, S. (2025). Effect of GenAI Dependency on University Students’ Academic Achievement: The Mediating Role of Self-Efficacy and Moderating Role of Perceived Teacher Caring. <span class="journal-title">Behavioral Sciences</span>, 15(10), 1348. https://doi.org/10.3390/bs15101348
+        </li>
+        <li class="references-item">
+            Long, D., & Magerko, B. (2020, April). What is AI literacy? Competencies and design considerations. In <span class="book-title">Proceedings of the 2020 CHI conference on human factors in computing systems</span> (pp. 1-16).
+        </li>
+        <li class="references-item">
+            O’Dea, X., Tsz Kit Ng, D., O’Dea, M., & Shkuratskyy, V. (2026). Factors affecting university students’ generative AI literacy: Evidence and evaluation in the UK and Hong Kong contexts. <span class="journal-title">Policy Futures in Education</span>, 24(1), 13-34.
+        </li>
+        <li class="references-item">
+            R. C. Torres, "AI Hallucination in the Context of Education: Exploring College Students’ Use of Generative AI for Academic Tasks," 2025 16th International Conference on E-Education, E-Business, E-Management and E-Learning (IC4e), Tokyo, Japan, 2025, pp. 445-449, doi: 10.1109/IC4e65071.2025.11075444.
+        </li>
+        <li class="references-item">
+            Revesai, Z. (2025). Generative AI dependency: the emerging academic crisis and its impact on student performance—a case study of a university in Zimbabwe. <span class="journal-title">Cogent Education</span>, 12(1), 1–33. https://doi.org/10.1080/2331186X.2025.2549787
+        </li>
+        <li class="references-item">
+            Stephenson, R., Armstrong, C. (2026. 3. 12). Student Generative Artificial Intelligence Survey 2026. Higher Education Policy Institute. https://www.hepi.ac.uk/reports/studentgenerative-ai-survey-2026/
+        </li>
+        <li class="references-item">
+            Wenhan Lyu, Yimeng Wang, Tingting (Rachel) Chung, Yifan Sun, and Yixuan Zhang. 2024. Evaluating the Effectiveness of LLMs in Introductory Computer Science Education: A Semester-Long Field Study. In <span class="book-title">Proceedings of the Eleventh ACM Conference on Learning @ Scale (L@S '24)</span>. Association for Computing Machinery, New York, NY, USA, 63–74. https://doi.org/10.1145/3657604.3662036
+        </li>
+        <li class="references-item">
+            Wang, Y. (2026). The effect of generative artificial intelligence literacy on academic achievement: The mediating role of academic self-efficacy and the moderating role of critical thinking. <span class="journal-title">Frontiers in Psychology</span>, 17, 1761562. https://doi.org/10.3389/fpsyg.2026.1761562
+        </li>
+        <li class="references-item">
+            김보현. (2025). 대학생의 학술 발표 과제를 위한 생성형 AI 활용 양상과 인식 연구. <span class="journal-title">교양학연구</span>, 33, 189-225. https://doi.org/10.24173/jge.2025.10.31.6
+        </li>
+        <li class="references-item">
+            김현지. (2025). AI 디지털 리터러시 진단을 위한 루브릭 준거 개발. <span class="journal-title">컴퓨터교육학회 논문지</span>, 28(8), 65-73. https://doi.org/10.32431/kace.2025.28.8.006
+        </li>
+        <li class="references-item">
+            나은미. (2024). 챗GPT의 시대, 대학 글쓰기 교육에 대한 성찰 및 교육 방향에 대한 고찰. <span class="journal-title">한성어문학</span>, 51, 79-106. https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11900702
+        </li>
+        <li class="references-item">
+            박상훈. (2025). 대학생의 생성형 AI에 대한 이해도 및 활용 경험: 성별·학년·전공별 차이 분석을 중심으로. <span class="journal-title">정보교육학회논문지</span>, 29(4), 367-377. https://doi.org/10.14352/jkaie.2025.29.4.367
+        </li>
+        <li class="references-item">
+            신소영. (2025). 학습 과정에서 AI의 교육적 활용이 AI 리터러시와 학습성과에 미치는 영향 탐색. <span class="journal-title">교육정보미디어연구</span>, 31(1), 245-266. 10.15833/KAFEIAM.31.1.245
+        </li>
+        <li class="references-item">
+            오선아, 류정희, 김연순. (2025). 팀기반 프로젝트 학습에서의 AI 활용이 간호 대학생의 AI 리터러시와 학습경험에 미치는 효과. <span class="journal-title">한국과 국제사회</span>, 9(5), 175-205. https://doi.org/10.22718/kga.2025.9.5.007
+        </li>
+        <li class="references-item">
+            유정수. (2026). 대화형 AI가 학습자의 학습 성과에 미치는 영향 분석. <span class="journal-title">한국정보통신학회논문지</span>, 30(2), 323-329. https://doi.org/10.6109/jkiice.2026.30.2.323
+        </li>
+        <li class="references-item">
+            이승훈. (2023). 생성형 AI를 활용한 문제중심학습에 대한 학습자의 디지털 리터러시 인식과 성과 진단 연구: 스마트관광 수강생을 중심으로. <span class="journal-title">관광연구저널</span>, 37(7), 129-145. 10.21298/IJTHR.2023.9.37.7.129
+        </li>
+        <li class="references-item">
+            이윤빈. (2024). 대학생 필자의 글쓰기에서 챗GPT 답변의 활용 유형 및 양상 연구. <span class="journal-title">교양교육연구</span>, 18(4), 59-79. https://doi.org/10.46392/kjge.2024.18.4.59
+        </li>
+        <li class="references-item">
+            이한샘, 유지원. (2024). 대학생의 생성형 AI의 교육적 사용경험 및 인식 탐색 : A대학 사례를 중심으로. <span class="journal-title">한국콘텐츠학회논문지</span>, 24(1), 428-437. https://doi.org/10.5392/JKCA.2024.24.01.428
+        </li>
+        <li class="references-item">
+            이화선, 박현주, 정진수, & 최성연. (2024). 대학생의 ChatGPT 의존성에 대한 ChatGPT 긍정적 인식, 창의적 자기신념, 학생주도성의 구조적 관계 분석. <span class="journal-title">창의력교육연구</span>, 24(4), 1-16. https://doi.org/10.36358/JCE.2024.24.4.1
+        </li>
+        <li class="references-item">
+            조별. (2023). 생성형 인공지능 시대의 대학 글쓰기 교육과 평가의 방향. <span class="journal-title">돈암어문학</span>, 44, 7-34. https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11670174
+        </li>
+        <li class="references-item">
+            홍서경, & 사재진. (2025). AI활용 프로젝트 수업 효과에 관한 연구 -협업, 리터러시, 윤리를 중심으로-. <span class="journal-title">대학교양교육연구</span>, 10(3), 91-111.
+        </li>
+    </ul>
+
+    <div class="section-subtitle">[English notation of Korean papers]</div>
+    <ul class="references-list">
+        <li class="references-item">
+            Cho, B. (2023). The Direction of Writing Education in the Era of Generative Artificial Intelligence. <span class="journal-title">DONAM OHMUNHAK</span>, 44, 7-34. https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11670174
+        </li>
+        <li class="references-item">
+            Hong, S., & Sa, J. (2025). A Study on the Effects of AI-Integrated Project-Based Learning –Focusing on Collaboration, Literacy, and Ethics-. <span class="journal-title">대학교양교육연구</span>, 10(3), 91-111.
+        </li>
+        <li class="references-item">
+            Kim, B. (2025). College Students' Use of Generative AI and Their Perceptions in Academic Presentations. <span class="journal-title">The Jounal of General Education</span>, 33, 189-225. https://doi.org/10.24173/jge.2025.10.31.6
+        </li>
+        <li class="references-item">
+            Kim, H. (2025). Development of Rubric Criteria for Assessing AI Digital Literacy. <span class="journal-title">The Journal of Korean Association of Computer Education</span>, 28(8), 65-73. https://doi.org/10.32431/kace.2025.28.8.006
+        </li>
+        <li class="references-item">
+            Lee, H., Park, H., Jeong, J., & Choi, S. (2024). Structural Analysis of University Students' Dependency on ChatGPT: The Role of Positive Perception, Creative Self-Beliefs, and Student Agency. <span class="journal-title">The Journal of Creativity Education</span>, 24(4), 1-16. https://doi.org/10.36358/JCE.2024.24.4.1
+        </li>
+        <li class="references-item">
+            Lee, H., & You, J. (2024). Exploring College Students’ Educational Experiences and Perceptions of Generative AI : The case of A university. <span class="journal-title">Journal of the Korea Contents Association</span>, 24(1), 428-437. https://doi.org/10.5392/JKCA.2024.24.01.428
+        </li>
+        <li class="references-item">
+            Lee, S. (2023). A study on learners’ digital literacy perceptions and performance diagnosis of problem-based learning using generative AI: Focusing on smart tourism students. <span class="journal-title">International Journal of Tourism and Hospitality Research</span>, 37(7), 129-145. 10.21298/IJTHR.2023.9.37.7.129
+        </li>
+        <li class="references-item">
+            Lee, Y. (2024). Types and Patterns of Utilizing ChatGPT Responses in College Student Writing. <span class="journal-title">Korean Journal of General Education</span>, 18(4), 59-79. https://doi.org/10.46392/kjge.2024.18.4.59
+        </li>
+        <li class="references-item">
+            Na, E. (2024). In the Age of ChatGPT, Reflections on University Writing Education and Research on Educational Directions. <span class="journal-title">Hanseong Eomunhak</span>, 51, 79-106. https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11900702
+        </li>
+        <li class="references-item">
+            Oh, S., Lyu, J., & Kim, Y. (2025). The effects of AI use on AI literacy and learning experiences in team-based project learning of nursing students. <span class="journal-title">Korea and Global Affairs</span>, 9(5), 175-205. https://doi.org/10.22718/kga.2025.9.5.007
+        </li>
+        <li class="references-item">
+            Park, S. (2025). University Students’ Understanding and Utilization of Generative AI: A Comparative Analysis by Gender, Major, and Academic Year. <span class="journal-title">Journal of The Korean Association of Information Education</span>, 29(4), 367-377. https://doi.org/10.14352/jkaie.2025.29.4.367
+        </li>
+        <li class="references-item">
+            Shin, S. (2025). Exploring the impact of educational use of AI in the learning process on AI literacy and learning outcomes. <span class="journal-title">Journal of Korean Association for Educational Information and Media</span>, 31(1), 245-266. 10.15833/KAFEIAM.31.1.245
+        </li>
+        <li class="references-item">
+            Yu, J. (2026). Analysis of the impact of conversational AI on learners’ learning outcomes. <span class="journal-title">Journal of the Korea Institute of Information and Communication Engineering</span>, 30(2), 323- 329. https://doi.org/10.6109/jkiice.2026.30.2.323
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>
